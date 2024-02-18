@@ -19,5 +19,9 @@ export const links = [
         label: 'Reflections',
         bgImage: 'span.jpeg'
     },
-    { href: '#', label: 'COMING SOON: Palette', bgImage: 'span.jpeg' }
+    {
+        href: '/galleries/palette',
+        label: 'Palette',
+        bgImage: 'span.jpeg'
+    }
 ];

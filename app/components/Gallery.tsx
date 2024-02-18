@@ -15,8 +15,8 @@ interface GalleryLink {
 }
 
 interface ImageGalleryProps {
-    heading: string;
-    tagline: string;
+    heading: string | JSX.Element;
+    tagline: string | JSX.Element;
     images: Image[];
     previousGallery?: GalleryLink;
     nextGallery?: GalleryLink;
@@ -31,9 +31,11 @@ const ImageGallery: FC<ImageGalleryProps> = ({
 }) => {
     return (
         <>
-            <div className="my-28 flex flex-col items-center text-center">
-                <h1 className="text-6xl text-bold mb-5">{heading}</h1>
-                <p>{tagline}</p>
+            <div className="my-16 px-52 flex flex-col items-center text-center">
+                <h1 className="inter-font font-bold text-6xl text-bold mb-5">
+                    {heading}
+                </h1>
+                <p className="space-y-5">{tagline}</p>
             </div>
             <div className="columns-1 md:columns-3 gap-4">
                 {images.map((image, index) => (

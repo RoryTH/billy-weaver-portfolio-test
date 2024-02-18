@@ -57,6 +57,7 @@ const NavBar = () => {
                 <Link
                     href="/"
                     className="flex items-center gap-2 inter-font font-bold text-4xl"
+                    onClick={() => setIsMenuOpen(false)}
                 >
                     bwpv
                 </Link>

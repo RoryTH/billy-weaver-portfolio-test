@@ -50,8 +50,8 @@ const NavBar = () => {
             className={`${
                 isMenuOpen
                     ? 'bg-gray-100 text-neutral-950 border-neutral-950/20'
-                    : 'bg-neutral-950'
-            } fixed text-lg w-full z-50 top-0 start-0 p-7 border-b-2 border-gray-100/20`}
+                    : 'bg-black/20 bg-blur backdrop-filter backdrop-blur-xl'
+            } fixed text-lg w-full z-50 top-0 start-0 p-7 border-b-2 border-gray-100/10`}
         >
             <div className="flex flex-wrap items-center justify-between mx-auto">
                 <Link

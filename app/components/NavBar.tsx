@@ -49,9 +49,9 @@ const NavBar = () => {
         <nav
             className={`${
                 isMenuOpen
-                    ? 'bg-gray-100 text-neutral-950 overscroll-none'
+                    ? 'bg-gray-100 text-neutral-950 border-neutral-950/20'
                     : 'bg-neutral-950'
-            } fixed text-lg w-full z-20 top-0 start-0 p-7 border-b-2 border-gray-50/20`}
+            } fixed text-lg w-full z-50 top-0 start-0 p-7 border-b-2 border-gray-100/20`}
         >
             <div className="flex flex-wrap items-center justify-between mx-auto">
                 <Link
@@ -73,9 +73,9 @@ const NavBar = () => {
                 <div
                     className={`${
                         isMenuOpen
-                            ? 'fixed flex top-20 bottom-0 inset-x-0 bg-gray-100'
+                            ? 'fixed flex top-[calc(98px)] bottom-0 inset-x-0 bg-gray-100'
                             : 'hidden'
-                    }  w-full md:flex md:w-auto`}
+                    }  w-full md:flex md:w-auto `}
                     id="navbar-default"
                 >
                     <ul className="flex flex-col justify-center p-4 text-2xl md:text-sm rounded-lg md:flex-row md:space-x-8 md:mt-0 md:p-0 md:border-0 w-full">

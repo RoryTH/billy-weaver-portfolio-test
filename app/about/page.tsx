@@ -2,7 +2,7 @@ import Image from 'next/image';
 
 export default function About() {
     return (
-        <div className="fadeIn flex flex-col-reverse md:flex-row gap-10   md:gap-28 xl:px-20 2xl:px-40 ">
+        <div className="fadeIn flex flex-col-reverse md:flex-row gap-10 p-5 md:gap-28 xl:px-20 2xl:px-40 ">
             <div className="md:w-1/2 w-full h-1/2 md:h-auto ">
                 <h1 className="mb-4 text-4xl inter-font font-semibold tracking-tight md:text-6xl ">
                     {' '}

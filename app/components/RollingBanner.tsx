@@ -2,7 +2,7 @@
 
 const RollingBanner = () => {
     const marqueeText =
-        'Billy Weaver Photo & Video • Billy Weaver Photo & Video • Billy Weaver Photo & Video • Billy Weaver Photo & Video • Billy Weaver Photo & Video • ';
+        'Bill Weaver Photo & Video • Bill Weaver Photo & Video • Bill Weaver Photo & Video • Bill Weaver Photo & Video • Bill Weaver Photo & Video • ';
     // Create an array to determine the number of repetitions
     const repetitions = Array.from({ length: 2 }, () => marqueeText);
 
@@ -11,7 +11,7 @@ const RollingBanner = () => {
             {repetitions.map((content, index) => (
                 <h1
                     key={index}
-                    className="scroll inter-font line-height[1.2] shrink-0 flex justify-around min-w-full gap-4 animate-scroll text-7xl mt-40 text-center font-semibold text-gray-100/80 z-30"
+                    className="scroll inter-font leading-normal shrink-0 flex justify-around min-w-full gap-4 animate-scroll text-7xl mt-40 text-center font-semibold text-gray-100/80 z-30"
                 >
                     {content}
                 </h1>

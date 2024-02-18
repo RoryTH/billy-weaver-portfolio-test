@@ -24,7 +24,7 @@ export default function RootLayout({
     return (
         <html lang="en">
             <body
-                className={`${inter.variable} ${spaceMono.variable} bg-black text-gray-100 mono-font min-h-screen flex flex-col mx-auto`}
+                className={`${inter.variable} ${spaceMono.variable} bg-black text-gray-100 mono-font min-h-[calc(100dvh)] md:min-h-screen flex flex-col mx-auto`}
             >
                 <NavBar />
                 <div className="grow flex justify-center items-center ">

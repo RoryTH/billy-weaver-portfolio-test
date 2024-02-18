@@ -48,13 +48,15 @@ const NavBar = () => {
     return (
         <nav
             className={`${
-                isMenuOpen ? 'bg-gray-100 text-neutral-950 overscroll-none' : ''
-            } relative text-lg w-full z-20 top-0 start-0 p-7`}
+                isMenuOpen
+                    ? 'bg-gray-100 text-neutral-950 overscroll-none'
+                    : 'bg-neutral-950'
+            } fixed text-lg w-full z-20 top-0 start-0 p-7 border-b-2 border-gray-50/20`}
         >
             <div className="flex flex-wrap items-center justify-between mx-auto">
                 <Link
                     href="/"
-                    className="flex items-center gap-2 font-bold text-4xl"
+                    className="flex items-center gap-2 inter-font font-bold text-4xl"
                 >
                     bwpv
                 </Link>
@@ -71,12 +73,12 @@ const NavBar = () => {
                 <div
                     className={`${
                         isMenuOpen
-                            ? 'fixed flex top-20 bottom-0 inset-x-0 text-4xl bg-gray-100'
+                            ? 'fixed flex top-20 bottom-0 inset-x-0 bg-gray-100'
                             : 'hidden'
                     }  w-full md:flex md:w-auto`}
                     id="navbar-default"
                 >
-                    <ul className="flex flex-col justify-center p-4   rounded-lg md:flex-row md:space-x-8 md:mt-0 md:p-0 md:border-0 w-full">
+                    <ul className="flex flex-col justify-center p-4 text-2xl md:text-sm rounded-lg md:flex-row md:space-x-8 md:mt-0 md:p-0 md:border-0 w-full">
                         {navLinks.map(({ href, label }) => (
                             <li key={href}>
                                 <Link

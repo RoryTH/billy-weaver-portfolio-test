@@ -1,4 +1,5 @@
 'use client';
+import Image from 'next/image';
 import React, { FC } from 'react';
 import { motion } from 'framer-motion';
 import Link from 'next/link';
@@ -47,10 +48,13 @@ const ImageGallery: FC<ImageGalleryProps> = ({
                         viewport={{ once: true }}
                         transition={{ duration: 1.5 }}
                     >
-                        <img
+                        <Image
                             src={image.src}
                             alt={image.alt}
                             className="w-full h-auto mb-4 inline-block"
+                            width={1000}
+                            height={1000}
+                            layout="responsive"
                         />
                     </motion.div>
                 ))}

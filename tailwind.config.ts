@@ -7,7 +7,13 @@ const config: Config = {
         './app/**/*.{js,ts,jsx,tsx,mdx}'
     ],
     theme: {
-        extend: {},
+        extend: {
+            maxWidth: {
+                'screen-3xl': '1792px', // Example width for 3xl
+                'screen-4xl': '2048px', // Example width for 4xl
+                'screen-5xl': '2560px' // Example width for 5xl
+            }
+        },
         letterSpacing: {
             extraWide: '.25em'
         }

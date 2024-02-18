@@ -12,7 +12,7 @@ export default function Expression() {
     return (
         <div className="flex flex-col items-center p-5">
             <ImageGallery
-                heading={'Cover the Gig'}
+                heading={'Cover the Gig.'}
                 tagline={
                     'Catch the moments that everyone wanted to remember ... or the ones that nobody saw.'
                 }

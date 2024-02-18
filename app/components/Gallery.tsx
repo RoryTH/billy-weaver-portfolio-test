@@ -31,11 +31,11 @@ const ImageGallery: FC<ImageGalleryProps> = ({
 }) => {
     return (
         <>
-            <div className="my-16 px-52 flex flex-col items-center text-center">
-                <h1 className="inter-font font-bold text-6xl text-bold mb-5">
+            <div className="mt-32 mb-16  flex flex-col items-center text-center">
+                <h1 className="inter-font font-bold text-5xl md:text-6xl 2xl:text-8xl text-bold mb-5">
                     {heading}
                 </h1>
-                <p className="space-y-5">{tagline}</p>
+                <p className="space-y-5 2xl:text-lg">{tagline}</p>
             </div>
             <div className="columns-1 md:columns-3 gap-4">
                 {images.map((image, index) => (
@@ -55,7 +55,7 @@ const ImageGallery: FC<ImageGalleryProps> = ({
                     </motion.div>
                 ))}
             </div>
-            <div className="w-full flex flex-row justify-between inter-font text-3xl font-semibold p-10">
+            <div className="w-full flex flex-row justify-between inter-font text-lg md:text-3xl font-semibold pt-10 px-3 md:px-10">
                 {previousGallery && (
                     <Link className="mr-auto" href={previousGallery.href}>
                         <PiCaretLeft className="inline-block" />{' '}

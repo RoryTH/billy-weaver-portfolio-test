@@ -24,10 +24,10 @@ export default function RootLayout({
     return (
         <html lang="en">
             <body
-                className={`${inter.variable} ${spaceMono.variable} bg-neutral-950 text-gray-100 mono-font min-h-screen  flex flex-col mx-auto`}
+                className={`${inter.variable} ${spaceMono.variable} bg-black text-gray-100 mono-font min-h-screen flex flex-col mx-auto`}
             >
                 <NavBar />
-                <div className="grow flex justify-center items-center pt-24">
+                <div className="grow flex justify-center items-center ">
                     {children}
                 </div>
             </body>

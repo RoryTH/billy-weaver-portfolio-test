@@ -2,14 +2,13 @@ import Image from 'next/image';
 
 export default function About() {
     return (
-        <div className="fadeIn flex flex-col-reverse md:flex-row gap-10 p-5 md:gap-28 xl:px-20 2xl:px-40 max-w-screen-2xl ">
+        <div className="fadeIn flex flex-col-reverse md:flex-row gap-10 p-5 pt-28  md:gap-28 xl:px-20 2xl:px-40 max-w-screen-3xl ">
             <div className="md:w-1/2 w-full h-1/2 md:h-auto ">
-                <h1 className="mb-4 text-4xl inter-font font-semibold tracking-tight md:text-6xl ">
+                <h1 className="mb-4 text-4xl inter-font font-semibold  md:text-6xl 2xl:text-8xl">
                     {' '}
-                    About me
+                    Hi there! I'm Bill.
                 </h1>
-                <div className=" text-justify leading-6">
-                    <p className="mb-8"> Hi there! I'm Bill.</p>
+                <div className=" text-justify leading-6 2xl:text-lg">
                     <p className="mb-8">
                         {' '}
                         I have been taking photographs since I was old enough to

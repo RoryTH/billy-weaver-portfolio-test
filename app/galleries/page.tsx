@@ -18,7 +18,7 @@ const LinkItem: FC<LinkItemProps> = ({
     setBackgroundImage,
     setShowBackground
 }) => (
-    <h2 className="text-lg mb-10 tracking-extraWide z-10">
+    <h2 className="text-lg  2xl:text-xl mb-10 tracking-extraWide z-10">
         <Link
             href={href}
             onMouseEnter={() => {
@@ -39,7 +39,7 @@ export default function Galleries() {
     const [showBackground, setShowBackground] = useState(false); // New state to control visibility
 
     return (
-        <div className="flex flex-col h-[calc(100vh-96px)] w-full justify-center items-center fadeIn relative p-5">
+        <>
             <div
                 className="absolute h-full w-full transition-opacity duration-700"
                 style={{
@@ -49,14 +49,17 @@ export default function Galleries() {
                     opacity: showBackground ? 1 : 0
                 }}
             ></div>
-            {links.map((link) => (
-                <LinkItem
-                    key={link.label}
-                    {...link}
-                    setBackgroundImage={setBackgroundImage}
-                    setShowBackground={setShowBackground}
-                />
-            ))}
-        </div>
+            <div className="flex flex-col h-screen w-full justify-center  items-center fadeIn relative p-5">
+                <div className="pt-24"></div>
+                {links.map((link) => (
+                    <LinkItem
+                        key={link.label}
+                        {...link}
+                        setBackgroundImage={setBackgroundImage}
+                        setShowBackground={setShowBackground}
+                    />
+                ))}
+            </div>
+        </>
     );
 }

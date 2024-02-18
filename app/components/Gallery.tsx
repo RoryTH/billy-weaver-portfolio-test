@@ -1,4 +1,3 @@
-// components/ImageGallery.tsx
 import React, { FC } from 'react';
 import { motion } from 'framer-motion';
 import { PiCaretRight } from 'react-icons/pi';

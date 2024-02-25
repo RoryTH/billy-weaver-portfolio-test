@@ -10,7 +10,7 @@ const nextGallery = links[currentGalleryIndex + 1];
 
 export default function Span() {
     return (
-        <div className="flex flex-col items-center p-5">
+        <div className="w-full flex flex-col items-center p-5">
             <ImageGallery
                 heading={'Go the distance.'}
                 tagline={'There are no limits to what you can cover...'}

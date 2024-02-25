@@ -32,21 +32,21 @@ const ImageGallery: FC<ImageGalleryProps> = ({
 }) => {
     return (
         <>
-            <div className="mt-32 mb-16  flex flex-col items-center text-center">
+            <div className="mt-32 mb-16  w-full flex flex-col items-center text-center">
                 <h1 className="inter-font font-bold text-5xl md:text-6xl 2xl:text-8xl text-bold mb-5">
                     {heading}
                 </h1>
                 <p className="space-y-5 2xl:text-lg">{tagline}</p>
             </div>
-            <div className="columns-1 md:columns-3 gap-4">
+            <div className="w-full columns-1 md:columns-3 gap-4">
                 {images.map((image, index) => (
                     <motion.div
                         key={index}
-                        className="overflow-hidden"
+                        className="w-full"
                         initial={{ opacity: 0 }}
                         whileInView={{ opacity: 1 }}
                         viewport={{ once: true }}
-                        transition={{ duration: 1.5 }}
+                        transition={{ duration: 1 }}
                     >
                         <Image
                             src={image.src}

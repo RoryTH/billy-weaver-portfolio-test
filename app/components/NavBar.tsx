@@ -23,9 +23,9 @@ const NavBar = () => {
     const toggleMenu = () => setIsMenuOpen(!isMenuOpen);
     const isActive = (href: string) => pathname.startsWith(href);
     const linkClass = (href: string) =>
-        `block py-2 px-3 rounded md:p-0 underline-offset-8 ${
+        `block py-2 px-3 rounded md:p-0 hover-underline-animation underline-offset-4 ${
             isActive(href) ? 'underline' : ''
-        } hover:underline `;
+        }`;
 
     // Handle mobile menu and window resize effects
     useEffect(() => {

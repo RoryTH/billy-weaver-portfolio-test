@@ -10,7 +10,7 @@ const nextGallery = links[currentGalleryIndex + 1];
 
 export default function Reflections() {
     return (
-        <div className="flex flex-col items-center p-5">
+        <div className="w-full flex flex-col items-center p-5">
             <ImageGallery
                 heading={'Behind the curtains.'}
                 tagline={
